@@ -1,5 +1,4 @@
-{:dependencies []
- :source-paths ["frontend"]
+{:deps {:aliases [:cljs]}
  :dev-http {8000 "assets"}
  :builds {:app {:output-dir "assets/js"
                 :asset-path "js"

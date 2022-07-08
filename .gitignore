@@ -6,3 +6,4 @@
 .shadow-cljs
 assets/js
 .nrepl-port
+node_modules/
