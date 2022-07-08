@@ -2,6 +2,9 @@
  :deps {org.clojure/clojure {:mvn/version "1.11.1"}}
  :aliases 
  {:dev {:extra-paths ["dev"]}
-  :shadow-cljs {:extra-deps {thheller/shadow-cljs {:mvn/version "2.19.5"}
-                             reagent/reagent {:mvn/version "1.1.1"}}
-                :extra-paths ["frontend"]}}}
+  :nrepl {:deps {nrepl/nrepl {:mvn/version,"0.9.0"}
+                 cider/cider-nrepl {:mvn/version,"0.28.3"}
+                 thheller/shadow-cljs {:mvn/version "2.19.5"}}
+          :main-opts ["-m" "nrepl.cmdline" "--middleware" "[cider.nrepl/cider-middleware,shadow.cljs.devtools.server.nrepl/middleware]"]}
+  :ui {:extra-deps {reagent/reagent {:mvn/version "1.1.1"}}
+       :extra-paths ["frontend"]}}}

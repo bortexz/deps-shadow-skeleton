@@ -1,0 +1,14 @@
+{
+    "calva.replConnectSequences": [
+        {
+            "name": "Connect to server + client started with clojure",
+            "projectType": "deps.edn",
+            "cljsType": {
+                "dependsOn": "shadow-cljs",
+                "connectCode": "(user/start-cljs)",
+                "isConnectedRegExp": "To quit, type: :cljs/quit",
+                "buildsRequired": true
+            },
+        },
+    ]
+}
