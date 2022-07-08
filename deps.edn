@@ -1,6 +1,7 @@
 {:paths ["backend"]
  :deps {org.clojure/clojure {:mvn/version "1.11.1"}}
  :aliases 
- {:cljs {:extra-deps {thheller/shadow-cljs {:mvn/version "2.19.5"}
+ {:dev {:extra-paths ["dev"]}
+  :cljs {:extra-deps {thheller/shadow-cljs {:mvn/version "2.19.5"}
                       reagent/reagent {:mvn/version "1.1.1"}}
          :extra-paths ["frontend"]}}}
