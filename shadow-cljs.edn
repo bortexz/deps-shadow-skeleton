@@ -1,0 +1,7 @@
+{:dependencies []
+ :source-paths ["frontend"]
+ :dev-http {8000 "assets"}
+ :builds {:app {:output-dir "assets/js"
+                :asset-path "js"
+                :target :browser
+                :modules {:main {:init-fn ui.app/init}}}}}
