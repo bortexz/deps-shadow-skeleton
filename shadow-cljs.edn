@@ -1,4 +1,4 @@
-{:deps {:aliases [:cljs]}
+{:deps {:aliases [:shadow-cljs]}
  :dev-http {8000 "assets"}
  :builds {:app {:output-dir "assets/js"
                 :asset-path "js"
